@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "PracticeKotlinApp"
+include ':app'
+include ':ch3_kotlin'
+include ':ch4_kotlin'
+include ':ch5_kotlin'
+include ':ch6_view'
