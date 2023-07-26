@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ch6_View</string>
+    <!-- 리소스 - 코드에서 R.drawable.a xml에서는 @drawable/a
+    a - 리소스 식별자, 파일명으로 식별된다, 파일명은 자바 명명규칙 위배할수 없으며 대문자 사용할 수 없다
+    유일하게 value의 리소스들은 파일명으로 식별되지 않는다 파일명은 권장 파일명만 것 뿐이다
+    values 리소스는 태그 하나가 식별자로
+
+    리소스 폴더명은 개발자 임의 폴더명 사용할 수 없다 지정된 폴더명 사용해야 한다
+    서브 포더 만들 수 없다
+     -->
+
+    <string name="long_text">동해물과 백두산이 마르고 말도록 하나님이 보우하사 우리 나라 만세 무궁화 삼천리</string>
 </resources>
