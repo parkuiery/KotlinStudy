@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+<!--    위치추적을 위해 필요한 퍼미션, dangerous-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+<!--  ACCESS_FINE_LOCATION 정확한 위치, ACCESS_COARSE_LOCATION 부정확한 위치
+버전이 업되면서 ACCESS_FINE_LOCATION을 걸면 ACCESS_COARSE_LOCATION을 같이 걸어줘야 함-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
