@@ -30,6 +30,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    //뷰 바인딩 기법은 라이브러리가 아닌 툴이다
+    viewBinding{
+        enabled = true
+    }
 }
 
 dependencies {
