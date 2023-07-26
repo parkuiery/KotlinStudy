@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/ch10_permission_noti" />
             <option value="$PROJECT_DIR$/ch3_kotlin" />
             <option value="$PROJECT_DIR$/ch4_kotlin" />
             <option value="$PROJECT_DIR$/ch5_kotlin" />
