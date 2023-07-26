@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Test3Activity">
+    tools:context=".Test3Activity"
+    android:orientation="horizontal"
+    android:columnCount="3">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--GridLayout 에 추가되는 뷰의 width, height는 기본으로 wrap_context가 적용되어 선언되지 않는다
+    width, height 값을 match_parent 를 지정해도 적용되지 않는다
+    숫자값으로 지정한다면 지정된다-->
+    <Button
+        android:text="A"
+        android:layout_rowSpan="2"
+        android:layout_columnSpan="2"
+        android:layout_width="0dp"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"/>
+    <Button
+        android:text="B"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"/>
+    <Button
+        android:text="C"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"/>
+    <Button
+        android:text="D"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"/>
+    <Button
+        android:text="E"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"/>
+    <Button
+        android:text="F"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"/>
+
+</GridLayout>
