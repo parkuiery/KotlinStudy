@@ -1,4 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu1"
+        android:title="menu1"/>
+<!--    showAsAction - 이 메뉴를 액션버튼(아이콘)으로 올릴 것인가-->
+    <item
+        android:id="@+id/menu2"
+        android:title="menu2"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="always"/>
+
+<!--ActionView 는 메뉴 기법으로 메뉴와 연결해야
+    xml 속성의 namespace 명, android 인 속성은 platform api 에서 처리하는 속성의 의미
+    (app)으로 지정한 속성은 비표준 api(androidx)에서 처리하는 속성
+
+    SearchView 하위호환성 걸리는 api이다 androidx 를 사용 권장
+
+    android 와 androidx에서 통일 이름으로 api 가 제공한다면 androidx
+
+    platporm api 하위호환성을 제공하기 위한 라이브러리가 appcompat 이다
+    -->
+    <item
+        android:id="@+id/menu3"
+        android:title="menu3"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        android:actionViewClass="androidx.appcompat.widget.SearchView"/>
 
 </menu>
