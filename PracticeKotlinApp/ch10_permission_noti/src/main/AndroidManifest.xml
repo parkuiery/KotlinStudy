@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 위치추적을 위해 필요한 퍼미션, dangerous -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--
+  ACCESS_FINE_LOCATION 정확한 위치, ACCESS_COARSE_LOCATION 부정확한 위치
+버전이 업되면서 ACCESS_FINE_LOCATION을 걸면 ACCESS_COARSE_LOCATION을 같이 걸어줘야 함
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-<!--    위치추적을 위해 필요한 퍼미션, dangerous-->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-
-<!--  ACCESS_FINE_LOCATION 정확한 위치, ACCESS_COARSE_LOCATION 부정확한 위치
-버전이 업되면서 ACCESS_FINE_LOCATION을 걸면 ACCESS_COARSE_LOCATION을 같이 걸어줘야 함-->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<!--    api level 33 부터는 아래의 퍼미션이 허락되어야 noti가 뜬다-->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
 
     <application
         android:allowBackup="true"
@@ -15,6 +18,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PracticeKotlinApp">
+        <activity
+            android:name=".Test1Activity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
