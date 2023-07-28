@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--특정 폴더가 정의되지 않은 기타 등등의 xml 파일이 위치하는 폴더가 xml이다-->
+<!--외부 앱에게 우리의 파일을 공유하려면 어느 파일 혹은 폴더인지 명시해야 하고
+이 xml을 manifests 에 등록해 시스템에 인지시켜야-->
+
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <external-path
+        name="myfiles"
+        path="Android/data/com.example.ch16_provider/files/Pictures"/>
+</paths>
