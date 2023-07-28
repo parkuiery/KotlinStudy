@@ -8,6 +8,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PracticeKotlinApp">
+<!--        우리가 만든 provider는 아니지만 파일 정보를 외부에 공개하는 FileProvider 이용-->
+        <provider
+            android:authorities="com.example.ch16_provider.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
